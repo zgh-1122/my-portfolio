@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#f7f8ff"/>
+  <meta name="description" content="Zuleha GH — Computer Science student and front-end developer building responsive web experiences with React and Next.js."/>
+  <title>Zuleha GH | Front-End Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-theme">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <a href="#home" class="logo">
+        <span class="logo-code">&lt;</span> Zuleha GH <span class="logo-code">/&gt;</span>
+      </a>
+
+      <div class="status-badge-nav desktop-only">
+        <span class="pulse-dot"></span>
+        <span>Available for Work</span>
+      </div>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle"
+          title="Toggle Light/Dark Theme"
+          aria-label="Toggle light and dark theme">
+          <i class="fa-solid fa-sun" id="themeIcon"></i>
+        </button>
+
+        <button class="mobile-toggle" id="mobileToggle"
+          aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars" id="mobileToggleIcon"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero reveal" id="home">
+    <div class="hero-container">
+
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>BS CS Student & Front-End Developer</span>
+        </div>
+
+        <h1 class="hero-title">
+          Front-End <br>
+          <span class="text-gradient">Developer</span>
+        </h1>
+
+        <p class="hero-description">
+          Computer Science student (CGPA: 3.76) in 4th semester at Govt. Zamindar
+          College, Gujrat. Building clean, interactive, and responsive
+          web interfaces using HTML, CSS, JavaScript, React, and Next.js.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <i class="fa-solid fa-arrow-down-right"></i>
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            <span>Let's Talk</span>
+            <i class="fa-regular fa-comments"></i>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="hero-avatar-wrapper">
+        <div class="blob-shape">
+          <img
+            src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=800&auto=format&fit=crop"
+            alt="Developer portfolio avatar"
+            class="hero-avatar-img"
+            id="avatarImg"
+          >
+        </div>
+
+        <div class="floating-badge badge-top-right">
+          <i class="fa-solid fa-code"></i>
+          <span>Clean Code</span>
+        </div>
+
+        <div class="floating-badge badge-bottom-right">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <span>Responsive</span>
+        </div>
+
+        <div class="floating-badge badge-bottom-left">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Fast Learner</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+ <!-- ================= ABOUT ME ================= -->
+  <section class="section about reveal" id="about">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="sub-title">ABOUT ME</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-image-card">
+          <div class="img-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop"
+              alt="Developer portrait"
+              loading="lazy"
+            >
+            <div class="exp-badge">
+              <span class="exp-number">3.76</span>
+              <span class="exp-text">CGPA</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="about-info">
+          <h3>
+            I'm <span class="text-gradient">Zuleha GH</span>,
+            a Front-End Developer based in Pakistan
+          </h3>
+
+          <p>
+            I am a dedicated Computer Science student currently in my
+            4th semester at Govt. Zamindar College, Gujrat with a CGPA of 3.76. I specialize
+            in building responsive, interactive web applications using
+            HTML5, CSS3, JavaScript (ES6+), React.js, and Next.js.
+          </p>
+
+       <div class="stats-row">
+         <div class="stat-card">
+           <span class="stat-num" data-target="3">0</span>
+           <span class="plus">+</span>
+           <p>Projects Completed</p>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-num" data-target="100">0</span>
+            <span class="plus">%</span>
+            <p>Dedication & Focus</p>
+          </div>
+
+          <div class="stat-card">
+           <span class="stat-num" data-target="4">0</span>
+           <span class="plus">th</span>
+           <p>CS Semester Enrolled</p>
+          </div>
+       </div>
+
+          <!-- Actions with Work With Me & Download CV -->
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span>Work With Me</span>
+              <i class="fa-solid fa-handshake"></i>
+            </a>
+
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= EDUCATION ================= -->
+  <section class="section education reveal" id="education">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="sub-title">ACADEMIC JOURNEY</span>
+        <h2 class="section-title">My Education</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <span class="status-tag tag-enrolled">CURRENTLY ENROLLED • CGPA: 3.76</span>
+            <h3>BS Computer Science</h3>
+            <h4>Govt. Zamindar College, Gujrat</h4>
+            <p>
+              Affiliated with University of Sargodha. Fourth semester
+              in progress focusing on web development, data structures,
+              and algorithms.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <span class="status-tag tag-completed">COMPLETED • 2024 • 984 / 1200 MARKS</span>
+            <h3>Intermediate in Computer Science (ICS)</h3>
+            <h4>ACE Group of Colleges</h4>
+            <p>
+              Studied computer science fundamentals, programming logic,
+              database concepts, and IT systems, securing 984 marks out of 1200.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <span class="status-tag tag-completed">COMPLETED • 2022 • 1011 / 1100 MARKS</span>
+            <h3>Matriculation in Science</h3>
+            <h4>Govt. Girls High School, Narowali</h4>
+            <p>
+              Completed secondary science education with a focus on
+              Mathematics, Computer Science, and Physics, securing 1011 marks out of 1100.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section skills reveal" id="skills">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="sub-title">MY SKILLS</span>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- FRONTEND SKILLS -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <i class="fa-solid fa-code"></i>
+            <h3>Frontend Development</h3>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>HTML5 / CSS3</span>
+              <span class="percent">95%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-width="95%" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>JavaScript (ES6+)</span>
+              <span class="percent">85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-width="85%" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>React.js</span>
+              <span class="percent">80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-width="80%" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Next.js</span>
+              <span class="percent">75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-width="75%" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Tailwind CSS</span>
+              <span class="percent">88%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-width="88%" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- TOOLS -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Tools & Workflow</h3>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Git / GitHub</span>
+              <span class="percent">82%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-width="82%" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Responsive Web Design</span>
+              <span class="percent">92%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-width="92%" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>REST APIs & Postman</span>
+              <span class="percent">80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-width="80%" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Performance Optimization</span>
+              <span class="percent">85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-width="85%" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>MongoDB and PostgreSQL</span>
+              <span class="percent">88%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" data-width="88%" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- TECH PILLS -->
+      <div class="tech-pills-container">
+        <div class="tech-pills-track">
+          <span class="tech-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+          <span class="tech-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+          <span class="tech-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span class="tech-pill"><i class="fa-brands fa-react"></i> React.js</span>
+          <span class="tech-pill"><i class="fa-solid fa-code"></i> Next.js</span>
+          <span class="tech-pill"><i class="fa-solid fa-wind"></i> Tailwind</span>
+          <span class="tech-pill"><i class="fa-brands fa-github"></i> Git</span>
+          <span class="tech-pill"><i class="fa-solid fa-code"></i> REST APIs</span>
+
+          <!-- Duplicate pills for continuous animation -->
+          <span class="tech-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+          <span class="tech-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+          <span class="tech-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span class="tech-pill"><i class="fa-brands fa-react"></i> React.js</span>
+          <span class="tech-pill"><i class="fa-solid fa-code"></i> Next.js</span>
+          <span class="tech-pill"><i class="fa-solid fa-wind"></i> Tailwind</span>
+          <span class="tech-pill"><i class="fa-brands fa-github"></i> Git</span>
+          <span class="tech-pill"><i class="fa-solid fa-code"></i> REST APIs</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= FEATURED PROJECTS ================= -->
+  <section class="section projects reveal" id="projects">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="sub-title">PORTFOLIO</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <!-- PROJECT FILTERS -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web App</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="creative">Creative</button>
+      </div>
+
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1: BIRTHDAY WEBSITE -->
+        <div class="project-card" data-category="creative">
+          <div class="project-img">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.Dv64CZLUJG0qhdrTlxm0cQHaE-?r=0&pid=Api&h=220&P=0"
+              alt="Animated birthday greeting website"
+              loading="lazy"
+            >
+            <div class="project-links-bar">
+             
+              <a href="https://birthday-special-friend.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Live Netlify Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+              </a>
+            </div>
+            <span class="project-category-tag">CREATIVE APP</span>
+          </div>
+
+          <div class="project-details">
+            <h3>Animated Birthday Wish Web App</h3>
+            <p>
+              An interactive birthday greeting website featuring animated
+              effects, background music, personalized memories, and
+              smooth visual transitions.
+            </p>
+            <div class="tech-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- PROJECT 2: VISASYNC GLOBAL -->
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.JoMYVyv9UhdTtgRq_tvFTAHaEI?r=0&pid=Api&h=220&P=0"
+              alt="VisaSync Global travel and visa consultancy platform"
+              loading="lazy"
+            >
+            <div class="project-links-bar">
+              
+              <a href="https://next-js-xi-vert.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Live Vercel Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+            </div>
+            <span class="project-category-tag">WEB DEVELOPMENT</span>
+          </div>
+
+          <div class="project-details">
+            <h3>VisaSync Global — Visa Consultancy Platform</h3>
+            <p>
+              A modern, responsive visa consultancy platform built with
+              Next.js. It showcases visa services, destination countries,
+              visa packages, and interactive pages.
+            </p>
+            <div class="tech-tags">
+              <span>Next.js</span>
+              <span>React.js</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- PROJECT 3: SKINCARE STORE (BIANCA) -->
+        <div class="project-card" data-category="ecommerce">
+          <div class="project-img">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.BRWe5cCio09WM8sL01Xv7QHaDt?r=0&pid=Api&h=220&P=0"
+              alt="Skincare ecommerce website concept"
+              loading="lazy"
+            >
+            <div class="project-links-bar">
+              
+              <a href="https://bianca-care-indol.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Live Vercel Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+              </a>
+            </div>
+            <span class="project-category-tag">E-COMMERCE</span>
+          </div>
+
+          <div class="project-details">
+            <h3>Skincare E-Commerce Website (Bianca)</h3>
+            <p>
+              A skincare store concept with product displays, a clean
+              shopping interface, responsive layouts, and an elegant
+              product-focused design.
+            </p>
+            <div class="tech-tags">
+              <span>Next.js</span>
+              <span>Tailwind CSS</span>
+              <span>Prisma</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section services reveal" id="services">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="sub-title">SERVICES</span>
+        <h2 class="section-title">What I Offer</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>
+            Custom, responsive web applications built with modern tools
+            like React and Next.js.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h3>UI/UX Implementation</h3>
+          <p>
+            Converting design concepts into clean, interactive interfaces
+            with smooth micro-interactions.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>
+            Websites designed to work smoothly across mobile phones,
+            tablets, laptops, and desktop screens.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-gauge-high"></i>
+          </div>
+          <h3>Performance Optimization</h3>
+          <p>
+            Improving website speed, optimizing assets, and maintaining
+            clean and organized frontend code.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact reveal" id="contact">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="sub-title">CONTACT</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info-card">
+          <h3>Get In Touch</h3>
+          <p>
+            I'm open to discussing web development projects, creative ideas,
+            and opportunities to build useful digital experiences.
+          </p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div>
+                <span class="info-label">Email</span>
+                <a href="mailto:zulehag@gmail.com" class="info-value">
+                  zulehag@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <span class="info-label">WhatsApp</span>
+                <a href="https://wa.me/923000000000" target="_blank" rel="noopener noreferrer" class="info-value">
+                  +92 300 0000000
+                </a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/zgh-1122" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:zulehag@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/923000000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project discussion" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary submit-btn">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col">
+        <a href="#home" class="logo">
+          <span class="logo-code">&lt;</span> Zuleha GH
+          <span class="logo-code">/&gt;</span>
+        </a>
+        <p>
+          Front-End Developer crafting responsive and interactive
+          web experiences with modern technologies.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">UI/UX Implementation</a></li>
+          <li><a href="#services">Responsive Design</a></li>
+          <li><a href="#services">Performance Optimization</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p><i class="fa-regular fa-envelope"></i> zulehag@gmail.com</p>
+        <p><i class="fa-brands fa-whatsapp"></i> +92 300 0000000</p>
+        <p><i class="fa-solid fa-location-dot"></i> Pakistan</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; 2026 Zuleha GH. All Rights Reserved.
+        Built with <i class="fa-solid fa-heart"></i> in Pakistan.
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- FLOATING SCROLL TOP/BOTTOM BUTTON -->
+  <button class="scroll-direction-btn" id="scrollDirectionBtn" title="Scroll to Bottom" aria-label="Scroll Direction">
+    <i class="fa-solid fa-arrow-down" id="scrollIcon"></i>
+  </button>
+
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    Message sent successfully!
+  </div>
+
+
+  <!-- CUSTOM JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
